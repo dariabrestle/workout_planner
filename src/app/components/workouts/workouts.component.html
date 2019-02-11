@@ -1,0 +1,8 @@
+<app-add-workout (addWorkout)="addWorkout($event)"></app-add-workout>
+
+<app-workout-item
+  *ngFor="let workout of workouts"
+  [workout]="workout"
+  (deleteWorkout)="deleteWorkout($event)"
+>
+</app-workout-item>

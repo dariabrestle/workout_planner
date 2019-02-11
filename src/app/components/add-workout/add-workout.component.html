@@ -1,0 +1,16 @@
+<form class="form" (ngSubmit)="onSubmit()">
+  <input
+    type="text"
+    name="title"
+    [(ngModel)]="title"
+    placeholder="Add Workout name..."
+  />
+  <input
+    type="text"
+    name="name"
+    [(ngModel)]="name"
+    placeholder="Add description..."
+  />
+
+  <input type="submit" value="Submit" class="btn" />
+</form>
